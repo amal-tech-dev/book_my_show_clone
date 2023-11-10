@@ -1,18 +1,18 @@
 import 'package:book_my_show_clone/utils/constants/color_constant.dart';
-import 'package:book_my_show_clone/view/main_screen/events_screen/events_screen.dart';
-import 'package:book_my_show_clone/view/main_screen/home_screen/home_screen.dart';
-import 'package:book_my_show_clone/view/main_screen/movies_screen/movies_screen.dart';
-import 'package:book_my_show_clone/view/main_screen/profile_screen/profile_screen.dart';
+import 'package:book_my_show_clone/view/events_screen/events_screen.dart';
+import 'package:book_my_show_clone/view/home_screen/home_screen.dart';
+import 'package:book_my_show_clone/view/movies_screen/movies_screen.dart';
+import 'package:book_my_show_clone/view/profile_screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 
-class MainScreen extends StatefulWidget {
-  MainScreen({super.key});
+class BottomNavigationScreen extends StatefulWidget {
+  BottomNavigationScreen({super.key});
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<BottomNavigationScreen> createState() => _BottomNavigationScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int bottomIndex = 0;
   List<Widget> pages = [];
 

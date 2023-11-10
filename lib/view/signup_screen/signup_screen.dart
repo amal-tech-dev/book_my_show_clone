@@ -1,10 +1,11 @@
 import 'package:book_my_show_clone/utils/constants/color_constant.dart';
 import 'package:book_my_show_clone/utils/database/database.dart';
-import 'package:book_my_show_clone/view/main_screen/main_screen.dart';
+import 'package:book_my_show_clone/view/bottom_navigation_screen/bottom_navigation_screen.dart';
 import 'package:book_my_show_clone/view/region_selection_screen/region_selection_screen.dart';
 import 'package:book_my_show_clone/view/signup_screen/signup_widgets/signup_carousel.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({super.key});
@@ -68,8 +69,10 @@ class SignUpScreen extends StatelessWidget {
                         SizedBox(
                           height: 50,
                           width: 60,
-                          child: Icon(
-                            Icons.location_searching_rounded,
+                          child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.google,
+                            ),
                           ),
                         ),
                         Text(
@@ -143,9 +146,6 @@ class SignUpScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Icon(
-                        Icons.flag,
-                      ),
                       Text('+91'),
                       Container(
                         height: 30,

@@ -1,4 +1,5 @@
 import 'package:book_my_show_clone/utils/constants/color_constant.dart';
+import 'package:book_my_show_clone/view/region_selection_screen/region_widgets/other_cities.dart';
 import 'package:book_my_show_clone/view/region_selection_screen/region_widgets/popluar_cities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -13,8 +14,14 @@ class RegionSelectionScreen extends StatelessWidget {
         backgroundColor: ColorConstant.bgColor,
         appBar: AppBar(
           backgroundColor: ColorConstant.appBarColor,
-          leading: Icon(
-            Icons.arrow_back_ios_new_rounded,
+          leading: BackButton(
+            onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  'Kindly select your city to proceed',
+                ),
+              ),
+            ),
           ),
           title: Text(
             'Pick a Region',
@@ -46,31 +53,39 @@ class RegionSelectionScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              height: 70,
-              color: ColorConstant.bgColor,
-              child: Row(
+            Expanded(
+              child: ListView(
+                shrinkWrap: true,
                 children: [
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(
-                    Icons.location_searching_rounded,
-                    color: ColorConstant.primaryColor,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'Auto Detect My Location',
-                    style: TextStyle(
-                      color: ColorConstant.primaryColor,
+                  Container(
+                    height: 70,
+                    color: ColorConstant.bgColor,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Icon(
+                          Icons.location_searching_rounded,
+                          color: ColorConstant.primaryColor,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Auto Detect My Location',
+                          style: TextStyle(
+                            color: ColorConstant.primaryColor,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
+                  PopularCities(),
+                  OtherCities(),
                 ],
               ),
             ),
-            PopularCities(),
           ],
         ),
       ),

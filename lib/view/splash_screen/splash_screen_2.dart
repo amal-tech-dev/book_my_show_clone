@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:book_my_show_clone/utils/constants/color_constant.dart';
 import 'package:book_my_show_clone/utils/constants/image_constant.dart';
-import 'package:book_my_show_clone/view/main_screen/main_screen.dart';
+import 'package:book_my_show_clone/view/bottom_navigation_screen/bottom_navigation_screen.dart';
 import 'package:book_my_show_clone/view/signup_screen/signup_screen.dart';
 import 'package:flutter/material.dart';
 
