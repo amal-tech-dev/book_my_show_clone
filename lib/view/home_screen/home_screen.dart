@@ -1,4 +1,9 @@
+import 'package:book_my_show_clone/global_widgets/image_carousel_builder.dart';
+import 'package:book_my_show_clone/global_widgets/movie_tile_builder.dart';
 import 'package:book_my_show_clone/utils/constants/color_constant.dart';
+import 'package:book_my_show_clone/utils/database/database.dart';
+import 'package:book_my_show_clone/view/home_screen/home_widgets/categories_builder.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -57,17 +62,29 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => Column(
-          children: [
-            Container(
-              height: 50,
-              width: 50,
-              color: Colors.blue,
+      body: ListView(
+        children: [
+          CategoriesBuilder(),
+          ImageCarouselBuilder(
+            itemList: DataBase.movieCarousel,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Image.asset(
+              'assets/images/ad.jpg',
             ),
-          ],
-        ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          MovieTileBuilder(
+            title: 'Recomended Movies',
+            length: 10,
+          ),
+        ],
       ),
     );
   }

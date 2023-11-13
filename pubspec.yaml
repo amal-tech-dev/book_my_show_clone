@@ -23,6 +23,8 @@ flutter:
   assets:
   - assets/logo/
   - assets/images/  
-  - assets/images/signup_carousel_images/
+  - assets/images/carousel_images/signup_carousel/
   - assets/images/popular_cities/
+  - assets/images/categories/
+  - assets/images/carousel_images/movies_carousel/
   

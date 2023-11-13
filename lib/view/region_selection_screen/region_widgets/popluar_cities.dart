@@ -57,7 +57,7 @@ class PopularCities extends StatelessWidget {
                                 width: 50,
                               ),
                               Text(
-                                popularCities[index]['name'],
+                                popularCities[index]['city'],
                                 style: TextStyle(
                                   color: ColorConstant.secondaryTextColor,
                                 ),

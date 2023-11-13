@@ -8,4 +8,5 @@ class ColorConstant {
   static const Color secondaryTextColor = Color(0xFF2C2B2B);
   static const Color bgColor = Color(0xFFFFFFFF);
   static const Color appBarColor = Color(0xFF2F3148);
+  static const Color bottomNavigationColor = Color(0xFFFAFAFA);
 }

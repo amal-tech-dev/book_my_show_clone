@@ -1,65 +1,65 @@
 class DataBase {
   static const List<Map> signupCarousel = [
     {
-      'image_url':
-          'assets/images/signup_carousel_images/signup_carousel_image_1.png',
       'description':
           'Enjoy faster show booking through our recommendations tailored for you.',
+      'image_url':
+          'assets/images/signup_carousel_images/signup_carousel_image_1.png',
     },
     {
-      'image_url':
-          'assets/images/signup_carousel_images/signup_carousel_image_2.png',
       'description':
           'Forgot to grab your movie snacks? NO worries! you can still order them even after booking your tickets.',
+      'image_url':
+          'assets/images/signup_carousel_images/signup_carousel_image_2.png',
     },
     {
-      'image_url':
-          'assets/images/signup_carousel_images/signup_carousel_image_3.png',
       'description':
           'Now save money on your movie tickets with free discount coupons from restraunts & cafes.',
+      'image_url':
+          'assets/images/signup_carousel_images/signup_carousel_image_3.png',
     },
   ];
 
   static const List<Map> popularCities = [
     {
+      'city': 'Mumbai',
       'image_url': 'assets/images/popular_cities/mumbai.jpg',
-      'name': 'Mumbai',
     },
     {
+      'city': 'Delhi',
       'image_url': 'assets/images/popular_cities/delhi-ncr.jpg',
-      'name': 'Delhi',
     },
     {
+      'city': 'Bengaluru',
       'image_url': 'assets/images/popular_cities/bengaluru.jpg',
-      'name': 'Bengaluru',
     },
     {
+      'city': 'Hyderabad',
       'image_url': 'assets/images/popular_cities/hyderabad.jpg',
-      'name': 'Hyderabad',
     },
     {
+      'city': 'Ahmedabad',
       'image_url': 'assets/images/popular_cities/ahmedabad.jpg',
-      'name': 'Ahmedabad',
     },
     {
+      'city': 'Chandigarh',
       'image_url': 'assets/images/popular_cities/chandigarh.jpg',
-      'name': 'Chandigarh',
     },
     {
+      'city': 'Chennai',
       'image_url': 'assets/images/popular_cities/chennai.jpg',
-      'name': 'Chennai',
     },
     {
+      'city': 'Pune',
       'image_url': 'assets/images/popular_cities/pune.jpg',
-      'name': 'Pune',
     },
     {
+      'city': 'Kolkata',
       'image_url': 'assets/images/popular_cities/kolkata.jpg',
-      'name': 'Kolkata',
     },
     {
+      'city': 'Kochi',
       'image_url': 'assets/images/popular_cities/kochi.jpg',
-      'name': 'Kochi',
     },
   ];
 
@@ -102,5 +102,44 @@ class DataBase {
     'Vasai-Virar',
     'Vijayawada',
     'Visakhapatnam',
+  ];
+
+  static const List<Map> categories = [
+    {
+      'category': 'Movies',
+      'image_url': 'assets/images/categories/movies.jpg',
+    },
+    {
+      'category': 'Sports',
+      'image_url': 'assets/images/categories/sports.jpg',
+    },
+    {
+      'category': 'ICC Mens\'s CWC 2023',
+      'image_url': 'assets/images/categories/icc_mens_cwc.jpg',
+    },
+    {
+      'category': 'Music Shows',
+      'image_url': 'assets/images/categories/music_shows.jpg',
+    },
+    {
+      'category': 'Stream',
+      'image_url': 'assets/images/categories/stream.jpg',
+    },
+    {
+      'category': 'Amusement Parks',
+      'image_url': 'assets/images/categories/amusement_parks.jpg',
+    },
+    {
+      'category': 'See All',
+      'image_url': 'assets/images/categories/see_all.jpg',
+    },
+  ];
+
+  static const List<String> movieCarousel = [
+    'assets/images/carousel_images/movies_carousel/movie_1.jpg',
+    'assets/images/carousel_images/movies_carousel/movie_2.jpg',
+    'assets/images/carousel_images/movies_carousel/movie_3.jpg',
+    'assets/images/carousel_images/movies_carousel/movie_4.jpg',
+    'assets/images/carousel_images/movies_carousel/movie_5.jpg',
   ];
 }
